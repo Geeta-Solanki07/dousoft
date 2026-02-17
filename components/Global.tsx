@@ -69,7 +69,7 @@ export default function GlobalPresence() {
         <div className="relative w-full h-[200px] md:h-[370px] mt-14 md:mt-20">
 
           <Image
-            src={globalPresence.worldMap}
+            src="/images/world-map.png"
             alt="world map"
             fill
             className="object-contain"
