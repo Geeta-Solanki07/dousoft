@@ -1,32 +1,30 @@
-// // import Image from "next/image";
-// import Navbar from "@/components/Navbar";
-// import Hero from "@/components/Hero";
-// import ServiceStrip from "@/components/ServiceStrip";
-
-// export default function Home() {
-//   return (
-//     <><Navbar /><Hero /><ServiceStrip /></>
-// //  <div>Riya</div>
-//   );
-// }
-
-import HeroSection from "@/components/sections/HeroSection";
-import WhyChoose from "@/components/sections/WhyChoose";
-import GlobalPresence from "@/components/sections/GlobalPresence";
-import PortfolioSection from "@/components/sections/PortfolioSection";
-import IndustriesSection from "@/components/sections/IndustriesSection";
-import ProcessSection from "@/components/sections/ProcessSection";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import OurServices from "@/components/OurServices";
+import State from "@/components/StatsSection";
+import Global from "@/components/Global";
+import Portfolio from "@/components/Portfolio";
+import Industry from "@/components/Industry";
+import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
+import ServicesStrip from "@/components/Services";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <WhyChoose />
-      <GlobalPresence/>
-      <PortfolioSection />
-      <ProcessSection />
-      <IndustriesSection />
+      <Navbar />
+      <Hero />
+        <OurServices />
+        <State />
+        <Global />
+        <Portfolio />
+        <Industry />
+        <Testimonials />
+        <CTA />
+        <Footer />
 
+      {/* <ServicesStrip /> */}
     </>
   );
 }

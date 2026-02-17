@@ -1,50 +1,69 @@
 @import "tailwindcss";
 
-/* @keyframes smooth-marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+/* ---------- Google Font ---------- */
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap'); */
+
+
+/* ---------- Konexy Font ---------- */
+@font-face {
+  font-family: "Konexy Personal Use";
+  src: url("/fonts/KonexyPersonalUse-Regular.woff2") format("woff2"),
+       url("/fonts/KonexyPersonalUse-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-.marquee-wrapper {
-  overflow: hidden;
-  position: relative;
+
+/* ---------- Default Body Font ---------- */
+body {
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.marquee-content {
-  display: flex;
-  width: max-content;
-  animation: smooth-marquee 35s linear infinite;
+
+/* ---------- Marquee Animation ---------- */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
 
-.marquee-content:hover {
-  animation-play-state: paused;
-}
- */
-
-@layer utilities {
-  .animate-marquee {
-    display: flex;
-    width: max-content;
-    animation: marquee 30s linear infinite;
-  }
-
-  @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  .marquee-container:hover .animate-marquee {
-    animation-play-state: paused;
-  }
+.animate-marquee {
+  animation: marquee 20s linear infinite;
 }
 
-@layer utilities {
-  .bg-grid-subtle {
-    background-image: radial-gradient(#22c55e20 1px, transparent 1px);
-    background-size: 15px 15px;
-  }
+
+/* ---------- Floating Animation ---------- */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-floatSlow {
+  animation: float 5s ease-in-out infinite;
+}
+ 
+/* Hero Grid Pattern */
+
+.hero-grid-pattern {
+  position: absolute;
+  width: 789px;
+  height: 650px;
+  top: 81px;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(21, 49.53px);
+  grid-auto-rows: 49.53px;
+}
+
+.hero-grid-pattern div {
+  border: 1px solid #C8EBCF;
+}
+
+/* Filled Squares */
+.hero-grid-pattern div.filled {
+  background: #C8EBCF;
 }

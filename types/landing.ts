@@ -19,6 +19,8 @@ export interface Service {
 
 export interface Feature {
   title: string;
+    image: string;
+
 }
 
 /* ================= STATS ================= */

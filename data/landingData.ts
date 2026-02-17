@@ -20,24 +20,35 @@ export const hero: Hero = {
   image: "/hero.png",
 };
 
-/* ---------------- FEATURES ---------------- */
-
 export const features: Feature[] = [
-  { title: "Affordable & transparent pricing" },
-  { title: "Experienced global IT professionals" },
-  { title: "Proven delivery across industries" },
-  { title: "Scalable solutions for long-term growth" },
+  { 
+    title: "Affordable & transparent pricing",
+    image: "/images/i1.png"
+  },
+  { 
+    title: "Experienced global IT professionals",
+    image: "/images/i2.png"
+  },
+  { 
+    title: "Proven delivery across industries",
+    image: "/images/i3.png"
+  },
+  { 
+    title: "Scalable solutions for long-term growth",
+    image: "/images/i4.png"
+  },
 ];
+
 
 /* ---------------- SERVICES ---------------- */
 
 export const services: Service[] = [
-  { title: "Web Design & Development", image: "/services/web.png" },
-  { title: "Software Development", image: "/services/software.png" },
-  { title: "Mobile App Development", image: "/services/mobile.png" },
-  { title: "UI/UX Designing", image: "/services/uiux.png" },
-  { title: "IT Consulting & Support", image: "/services/consult.png" },
-  { title: "Digital Marketing", image: "/services/marketing.png" },
+  { title: "Web Design & Development", image: "/images/f1.png" },
+  { title: "Software Development", image: "/images/f2.png" },
+  { title: "Mobile App Development", image: "/images/f3.png" },
+  { title: "UI/UX Designing", image: "/images/f4.png" },
+  { title: "IT Consulting & Support", image: "/images/f5.png" },
+  { title: "Digital Marketing", image: "/images/f6.png" },
 ];
 
 /* ---------------- STATS ---------------- */
@@ -52,50 +63,51 @@ export const stats: Stat[] = [
 export const portfolios = [
   {
     title: "Big Bang Crackers – Digital Growth Portfolio",
-    image: "/portfolio/work.png",
-    category: ["BIG BANG CRACKER", "WORDPRESS"],
+    image: "/images/portfolio1.png",
+    category: ["Big Bang Cracker", "WordPress"],
     metrics: [
       { value: "14k+", label: "Total Downloads" },
-      { value: "4.1★", label: "App Rating" },
-    ],
+      { value: "4.1 ★", label: "App Rating" }
+    ]
   },
   {
     title: "Magento Commerce Growth Story",
-    image: "/portfolio/work2.png",
-    category: ["KIRBYALLISON", "MAGENTO"],
+    image: "/images/portfolio2.png",
+    category: ["KirbyAllison", "Magento"],
     metrics: [
-      { value: "400%+", label: "Increase in online revenue within first 6 month" },
-      { value: "70%", label: "Increase repeat customer" },
-    ],
-  },
-  {
-    title: "Building a Scalable Ride-Sharing Platform from the Ground Up",
-    image: "/portfolio/work3.png",
-    category: ["ME RIDE", "MOBILE APP"],
-    metrics: [
-      { value: "100%", label: "User Centered" },
-      { value: "100+", label: "Download" },
-    ],
+      { value: "400%+", label: "Increase in online revenue" },
+      { value: "70%", label: "Increase repeat customer" }
+    ]
   },
   {
     title: "Shopify Ecommerce Growth: Industrial Gear & Oil Pumps Store",
-    image: "/portfolio/work4.png",
-    category: ["OILPUMPEXPRESS", "SHOPIFY"],
+    image: "/images/portfolio3.png",
+    category: ["OilPumpExpress", "Shopify"],
     metrics: [
-      { value: "210%", label: "Increase in shopify conversion rate" },
-      { value: "45%", label: "Reduction in cart abandonment" },
-    ],
+      { value: "210%", label: "Increase in Shopify conversion rate" },
+      { value: "45%", label: "Reduction in cart abandonment" }
+    ]
+  },
+  {
+    title: "Building a Scalable Ride-Sharing Platform from the Ground Up",
+    image: "/images/portfolio4.png",
+    category: ["Mieride", "Mobile App"],
+    metrics: [
+      { value: "100%", label: "User Centered" },
+      { value: "100+", label: "Download" }
+    ]
   },
   {
     title: "Transforming Bellevue Resort into a Scalable Digital Experience",
-    image: "/portfolio/work5.png",
-    category: ["BELLEVUE RESORT", "DIGITAL GROWTH FRAMEWORK"],
+    image: "/images/portfolio5.png",
+    category: ["BellevueResort", "Digital Growth Framework"],
     metrics: [
       { value: "179%", label: "Website Traffic Increased" },
-      { value: "100%", label: "Experience-Driven UX" },
-    ],
-  },
+      { value: "100%", label: "Experience-Driven UX" }
+    ]
+  }
 ];
+
 /* ---------------- GLOBAL PRESENCE ---------------- */
 
 export const globalPresence: GlobalPresenceData = {
@@ -126,7 +138,7 @@ export const testimonial: Testimonial = {
   review:
     "Working with Dousoft has truly been a game-changer for our business. Their technology and expertise helped us scale operations efficiently and deliver outstanding results.",
 
-  image: "/client.png",
+  image: "/images/girl.png",
 };
 
 /* ---------------- CTA ---------------- */
