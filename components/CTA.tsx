@@ -37,7 +37,7 @@ export default function CTASection() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="md:hidden relative flex flex-col items-center text-center w-[90%] mx-auto py-12 px-4 gap-6 bg-gradient-to-br from-[#F4FFF7] via-[#E9FAEE] to-[#CFEEDD] rounded-xl mt-12">
+      {/* <div className="md:hidden relative flex flex-col items-center text-center w-[90%] mx-auto py-12 px-4 gap-6 bg-gradient-to-br from-[#F4FFF7] via-[#E9FAEE] to-[#CFEEDD] rounded-xl mt-12">
         <h2 className="font-konexy text-[26px] leading-[36px] text-gray-800">
           {cta.title}
         </h2>
@@ -49,7 +49,7 @@ export default function CTASection() {
           <MessageSquare className="w-8 h-8 transform -scale-x-100" />
           {cta.buttonText}
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }
