@@ -8,17 +8,23 @@ export default function ServicesStrip() {
   ];
 
   return (
-    <div className="bg-[#38b93d] py-4 overflow-hidden">
+    <div className="bg-[#36BC38] py-4 overflow-hidden">
 
       <div className="animate-marquee whitespace-nowrap flex">
 
         {[1, 2].map((group) => (
           <div key={group} className="flex gap-12 px-6">
-            {services.map((service, i) => (
-              <span key={i} className="text-white font-bold text-lg flex gap-2">
-                ✦ {service}
-              </span>
-            ))}
+            {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex items-center gap-3 text-white text-[18px] md:text-[22px] font-[var(--font-poppins)]"
+          >
+            {/* star icon */}
+            <span className="text-yellow-300 text-xl">✦</span>
+
+            {service}
+          </div>
+        ))}
           </div>
         ))}
 

@@ -1,17 +1,7 @@
 @import "tailwindcss";
 
-/* ---------- Google Font ---------- */
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap'); */
-
-
-/* ---------- Konexy Font ---------- */
-@font-face {
-  font-family: "Konexy Personal Use";
-  src: url("/fonts/KonexyPersonalUse-Regular.woff2") format("woff2"),
-       url("/fonts/KonexyPersonalUse-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+.font-lustria{
+  font-family: 'Lustria', serif;
 }
 
 
@@ -46,24 +36,3 @@ body {
   animation: float 5s ease-in-out infinite;
 }
  
-/* Hero Grid Pattern */
-
-.hero-grid-pattern {
-  position: absolute;
-  width: 789px;
-  height: 650px;
-  top: 81px;
-  right: 0;
-  display: grid;
-  grid-template-columns: repeat(21, 49.53px);
-  grid-auto-rows: 49.53px;
-}
-
-.hero-grid-pattern div {
-  border: 1px solid #C8EBCF;
-}
-
-/* Filled Squares */
-.hero-grid-pattern div.filled {
-  background: #C8EBCF;
-}

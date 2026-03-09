@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Noto_Sans, Inter } from "next/font/google";
+import { Poppins, Noto_Sans, Lustria } from "next/font/google";
 import "./globals.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-poppins",
+});
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -8,10 +14,10 @@ const notoSans = Noto_Sans({
   variable: "--font-noto",
 });
 
-const inter = Inter({
+const lustria = Lustria({
   subsets: ["latin"],
-  weight: ["500", "600"],
-  variable: "--font-inter",
+  weight: ["400"],
+  variable: "--font-lustria",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${notoSans.variable} ${inter.variable} font-sans`}>
+      <body
+        className={`${poppins.variable} ${notoSans.variable} ${lustria.variable}`}
+      >
         {children}
       </body>
     </html>

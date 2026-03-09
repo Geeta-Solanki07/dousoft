@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import WhyChoose from "@/components/WhyChoose";
 import OurServices from "@/components/OurServices";
 import State from "@/components/StatsSection";
 import Global from "@/components/Global";
@@ -8,14 +9,19 @@ import Industry from "@/components/Industry";
 import Testimonials from "@/components/Testimonials";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
-import ServicesStrip from "@/components/Services";
+import Services from "@/components/Services"
+import ServicesStrip from "@/components/ServicesStrip";
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <Hero />
-        <OurServices />
+      <Services />
+      <WhyChoose />
+      <ServicesStrip />
+      
+        {/* <OurServices /> */}
         <State />
         <Global />
         <Portfolio />
@@ -24,7 +30,6 @@ export default function Home() {
         <CTA />
         <Footer />
 
-      {/* <ServicesStrip /> */}
     </>
   );
 }
